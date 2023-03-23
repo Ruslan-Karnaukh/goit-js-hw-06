@@ -11,8 +11,8 @@ function handleSubmit (event ){
     } = event.currentTarget;
     if(email.value === "" || password.value === ""){
         alert("Bсі поля повинні бути заповнені")
-      }  console.log(`Login: ${email.value}, Password: ${password.value}`);
+      } else{ console.log(`Login: ${email.value}, Password: ${password.value}`);
       alert("Welcome");
-     
+    }
       event.currentTarget.reset()
 }
