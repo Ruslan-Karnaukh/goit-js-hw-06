@@ -14,10 +14,12 @@ const images = [
 ];
 
 const listIcon = document.querySelector('.gallery');
-for (const image of images) {
-  listIcon.insertAdjacentHTML("afterbegin", `<li><img src="${image.url}" alt="${image.alt}"></img></li>`);
-}
 
+ const addImg = images.map(({url, alt}) =>{
+  listIcon.insertAdjacentHTML("afterbegin", `<li><img src="${url}" alt="${alt}"></img></li>`);
+ }).join("") 
+
+ 
  
 
 
