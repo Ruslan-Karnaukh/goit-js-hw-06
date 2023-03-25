@@ -41,6 +41,7 @@ createBoxes(value)
 function destroyBoxes(){
 while (boxes.firstChild){
   boxes.removeChild(boxes.firstChild)
+  
 }
-
+input.value = "";
 }
